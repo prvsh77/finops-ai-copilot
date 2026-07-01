@@ -1,7 +1,7 @@
 
 <div align="center">
 
-<img src="docs/images/banner.png" alt="FinOps AI Copilot Banner" width="100%"/>
+<img src="docs/banner.png" alt="FinOps AI Copilot Banner" width="100%"/>
 
 </div>
 
