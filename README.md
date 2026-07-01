@@ -1,8 +1,9 @@
 
 <div align="center">
 
-<img src="docs/banner.png" alt="FinOps AI Copilot Banner" width="100%"/>
-
+<p align="center">
+  <img src="docs/banner.png" alt="Banner" width="100%">
+</p>
 </div>
 
 # 🚀 FinOps AI Copilot
