@@ -13,7 +13,7 @@ AI-powered financial operations platform featuring multi-agent AI, financial ana
 
 <p align="center">
 
-<a href="YOUR_VERCEL_URL">
+<a href="https://finops-ai-copilot.vercel.app">
 <img src="https://img.shields.io/badge/🚀_Live_Demo-Online-success?style=for-the-badge"/>
 </a>
 
