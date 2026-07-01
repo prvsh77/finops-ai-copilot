@@ -1,0 +1,26 @@
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile.api
+    environment:
+      API_PORT: 8080
+      API_DATA_FILE: /app/apps/api/storage/dev-data.json
+      JWT_SECRET: local-docker-secret-change-me
+      CORS_ORIGIN: http://localhost:5173
+    ports:
+      - "8080:8080"
+    volumes:
+      - api-data:/app/apps/api/storage
+
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile.web
+    ports:
+      - "8081:80"
+    depends_on:
+      - api
+
+volumes:
+  api-data:
