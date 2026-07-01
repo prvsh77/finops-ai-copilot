@@ -1,7 +1,11 @@
+
 <div align="center">
 
-# 🚀 FinOps AI Copilot
+<img src="docs/images/banner.png" alt="FinOps AI Copilot Banner" width="100%"/>
 
+</div>
+
+# 🚀 FinOps AI Copilot
 ### Enterprise AI-Powered Financial Intelligence Platform
 
 AI-powered financial operations platform featuring multi-agent AI, financial analytics, fraud detection, forecasting, RAG, and executive reporting.
