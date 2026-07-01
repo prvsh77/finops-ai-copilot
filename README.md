@@ -6,7 +6,7 @@
 </p>
 </div>
 
-# 🚀 FinOps AI Copilot
+# FinOps AI Copilot
 ### Enterprise AI-Powered Financial Intelligence Platform
 
 AI-powered financial operations platform featuring multi-agent AI, financial analytics, fraud detection, forecasting, RAG, and executive reporting.
@@ -56,7 +56,7 @@ Designed as a portfolio-grade AI application, the project demonstrates modern AI
 
 # ✨ Features
 
-## 🤖 AI Platform
+## AI Platform
 
 - Multi-Agent AI Orchestrator
 - OpenAI / Gemini / Ollama Support
