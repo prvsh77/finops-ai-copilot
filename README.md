@@ -1,64 +1,292 @@
-# FinOps AI Copilot
+<div align="center">
 
-> Pluggable multi-tenant corporate finance orchestrator with specialist agents, automated fraud analysis, SSE streams, and visual ledgers.
+# 🚀 FinOps AI Copilot
 
-FinOps AI Copilot is an enterprise-grade financial intelligence engine. It leverages specialized AI agents to analyze corporate ledger transactions, manage AP invoices, reconcile treasury bank balances, and flag payment security threats before execution.
+### Enterprise AI-Powered Financial Intelligence Platform
 
-## 🚀 Key Features
+AI-powered financial operations platform featuring multi-agent AI, financial analytics, fraud detection, forecasting, RAG, and executive reporting.
 
-* **Enterprise AI Gateway**: Pluggable models (OpenAI, Gemini, Ollama) routed dynamically with token cost-evaluation counters.
-* **Specialist Agent Personas**: Supervisor agent delegating complex financial, compliance, fraud, and forecasting workflows to specialists.
-* **RAG Retrieval Engine**: Contextual search using hybrid TF-IDF lookups on corporate standard operating procedures and SOX guidelines.
-* **Financial Intelligence Core**: Dynamic calculations for health ratings, 6-month cash forecasting trends, and P&L brief summaries.
-* **Threat Scanner**: Weekend transaction traps, duplicate payment matches (within a 7-day window), and blocked vendor locks.
+<p align="center">
+
+<a href="YOUR_VERCEL_URL">
+<img src="https://img.shields.io/badge/🚀_Live_Demo-Online-success?style=for-the-badge"/>
+</a>
+
+<a href="https://github.com/prvsh77/finops-ai-copilot">
+<img src="https://img.shields.io/badge/GitHub-Repository-black?style=for-the-badge&logo=github"/>
+</a>
+
+</p>
+
+<p align="center">
+
+<img src="https://img.shields.io/badge/React-18-blue?logo=react"/>
+<img src="https://img.shields.io/badge/Vite-6-purple?logo=vite"/>
+<img src="https://img.shields.io/badge/Node.js-20-green?logo=node.js"/>
+<img src="https://img.shields.io/badge/AI-Multi--Agent-red"/>
+<img src="https://img.shields.io/badge/RAG-Enabled-orange"/>
+<img src="https://img.shields.io/badge/License-MIT-yellow"/>
+
+</p>
+
+</div>
 
 ---
 
-## 🛠️ Folder Structure
+# 📖 Overview
+
+FinOps AI Copilot is an AI-powered financial intelligence platform that helps organizations analyze financial data, monitor operational health, detect fraud, forecast cash flow, and generate executive insights through specialized AI agents.
+
+Designed as a portfolio-grade AI application, the project demonstrates modern AI engineering concepts including:
+
+- Multi-Agent AI
+- Retrieval-Augmented Generation (RAG)
+- Financial Intelligence
+- AI-powered Analytics
+- Fraud Detection
+- Forecasting
+- Enterprise Dashboard Design
+
+---
+
+# ✨ Features
+
+## 🤖 AI Platform
+
+- Multi-Agent AI Orchestrator
+- OpenAI / Gemini / Ollama Support
+- AI Gateway
+- Conversation Memory
+- Prompt Templates
+- RAG Knowledge Retrieval
+- Streaming AI Responses
+
+---
+
+## 💰 Finance Core
+
+- Dashboard
+- Transactions
+- Invoices
+- Payments
+- Treasury
+- Vendors
+- Customers
+- Budgets
+
+---
+
+## 📊 AI Financial Intelligence
+
+- Financial Health Score
+- Fraud Detection
+- Executive Summary Generation
+- Cash Flow Forecasting
+- Risk Analysis
+- Vendor Risk Scoring
+
+---
+
+## 📈 Analytics & Reports
+
+- Financial Reports
+- Export Center
+- Global Search
+- Executive Dashboard
+- CSV / Excel / JSON Export
+
+---
+
+## 🔒 Security
+
+- JWT Authentication
+- Refresh Tokens
+- MFA Support
+- RBAC
+- API Keys
+- Audit Logs
+- Multi-Tenant Architecture
+
+---
+
+# 🏗️ Architecture
 
 ```text
+                    React + Vite Frontend
+                             │
+                     REST API / SSE
+                             │
+                    Node.js Backend API
+                             │
+     ┌───────────────┬────────────────┬──────────────┐
+     │               │                │              │
+ Authentication   Finance Core    AI Platform    Reports
+     │               │                │              │
+     └───────────────┴────────────────┴──────────────┘
+                             │
+                     AI Gateway
+                             │
+      ┌──────────┬───────────┬──────────┐
+      │          │           │          │
+   OpenAI     Gemini      Ollama     Mock AI
+                             │
+                    Multi-Agent System
+                             │
+      Supervisor → Fraud → Treasury → Forecast
+                             │
+                    RAG + Memory + Tools
+```
+
+---
+
+# 🖼️ Screenshots
+
+## Dashboard
+
+![Dashboard](docs/images/dashboard.png)
+
+## AI Copilot
+
+![AI](docs/images/ai-copilot.png)
+
+## Transactions
+
+![Transactions](docs/images/transactions.png)
+
+## Fraud Center
+
+![Fraud](docs/images/fraud-center.png)
+
+## Reports
+
+![Reports](docs/images/reports.png)
+
+---
+
+# 🛠 Tech Stack
+
+### Frontend
+
+- React
+- Vite
+- Tailwind CSS
+- React Router
+- Recharts
+- Lucide Icons
+
+### Backend
+
+- Node.js
+- REST API
+- JWT Authentication
+- Repository Pattern
+
+### AI
+
+- OpenAI
+- Gemini
+- Ollama
+- Multi-Agent Architecture
+- RAG
+- Prompt Engineering
+
+### Deployment
+
+- Vercel
+- Render
+
+---
+
+# 📂 Project Structure
+
+```text
+.
 ├── apps/
-│   ├── api/                   # Fast Node.js microservice architecture
-│   │   ├── src/
-│   │   │   ├── ai/            # Gateway, orchestrator, agents, memory & RAG
-│   │   │   ├── core/          # Base models, Repository pattern, and EventBus
-│   │   │   ├── modules/       # Invoices, Payments, Transactions, Vendors, and Intelligence
-│   │   └── test/              # Integration and unit test runner suite
+│   └── api/
+│       ├── ai/
+│       ├── modules/
+│       ├── storage/
+│       └── test/
+│
 ├── packages/
-│   └── shared/                # Shared interfaces and verification validators
-├── src/                       # Premium React/TS Vite frontend Dashboard
+│   └── shared/
+│
+├── src/
+│   ├── app/
+│   ├── components/
+│   └── assets/
+│
+├── docs/
+└── README.md
 ```
 
 ---
 
-## 🏗️ Architecture
-
-```mermaid
-graph TD
-    Client[React/Vite Frontend] -->|REST / SSE Streams| API[Node.js API Gateway]
-    API --> Auth[RBAC Auth / Session Token Validator]
-    API --> AI[Enterprise AI Gateway]
-    AI --> Supervisor[Supervisor Orchestrator Agent]
-    Supervisor --> Specialists[Specialists: Fraud, Treasury, Financial, Forecast]
-    Specialists --> Tools[Tool Registry: Ledger DB Lookup]
-    API --> Core[Business Core Services]
-    Core --> Repos[Repository Layer Pattern]
-    Repos --> JSONStore[Multi-Tenant JSON DB Store]
-```
-
----
-
-## ⚙️ Quick Start
+# 🚀 Local Setup
 
 ```bash
-# 1. Install dependencies
+git clone https://github.com/prvsh77/finops-ai-copilot.git
+
+cd finops-ai-copilot
+
 npm install
 
-# 2. Run backend test suite
-npm test
-
-# 3. Build & start dev workspace
 npm run dev
 ```
 
-For comprehensive instructions, see [INSTALLATION.md](file:///c:/Users/M%20Prashant%20Rao/Downloads/AI%20Finance%20Project/INSTALLATION.md).
+Backend
+
+```bash
+npm run api:start
+```
+
+---
+
+# 🌐 Live Demo
+
+Frontend
+
+```
+https://YOUR_VERCEL_URL
+```
+
+Backend
+
+```
+https://YOUR_RENDER_URL/api/v1/health
+```
+
+---
+
+# 📌 Roadmap
+
+- [x] Authentication
+- [x] AI Gateway
+- [x] Multi-Agent AI
+- [x] Finance Dashboard
+- [x] Fraud Detection
+- [x] Forecasting
+- [x] Reports
+- [x] Global Search
+- [x] Export Center
+- [x] Deployment
+
+---
+
+# 👨‍💻 Author
+
+**M Prashant Rao**
+
+AI Engineer | Machine Learning | System-Oriented AI
+
+LinkedIn
+
+https://linkedin.com/in/prvshrvo
+
+GitHub
+
+https://github.com/prvsh77
+
+---
+
+## ⭐ If you found this project useful, consider giving it a star!
